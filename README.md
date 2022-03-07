@@ -36,3 +36,13 @@ text-decoration: none;
 ```
 
 - `max-width` : 0px ~ 780px에 한해서 적용
+
+### CSS 변수 선언
+
+```css
+:root {
+    --text-color: #388e3c;
+    --menu-hover-color: #1b5e20;
+    --background-color: #a5d6a7;
+}
+```

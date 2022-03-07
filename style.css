@@ -1,3 +1,9 @@
+:root {
+    --text-color: #388e3c;
+    --menu-hover-color: #1b5e20;
+    --background-color: #a5d6a7;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +14,11 @@ ul li {
     list-style: none;
 }
 ul li a {
-    color: #388e3c;
+    color: var(--text-color);
     text-decoration: none;
 }
 header {
-    background: #a5d6a7;
+    background: var(--background-color);
 }
 #navbar {
     display: flex;
@@ -24,7 +30,7 @@ header {
 .logo {
     display: flex;
     font-size: 40px;
-    color: #388e3c;
+    color: var(--text-color);
 }
 
 .logo__icon {
@@ -44,7 +50,7 @@ header {
 }
 
 .menu li:hover {
-    background-color: #1b5e20;
+    background-color: var(--menu-hover-color);
     border-radius: 4px;
 }
 
@@ -67,8 +73,10 @@ header {
     }
 
     .menu {
-        flex-direction: column;
         display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .hamburgur {
@@ -83,6 +91,7 @@ header {
     }
 
     .menu li {
+        width: 100%;
         text-align: center;
     }
 
@@ -93,9 +102,11 @@ header {
     .icon {
         display: none;
         justify-content: center;
+        align-items: center;
+        width: 100%;
     }
 
-    .show {
-        display: block;
+    .menu.show, .icon.show {
+        display: flex;
     }
 }
