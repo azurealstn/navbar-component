@@ -2,6 +2,8 @@
 
 [드림코딩](https://www.youtube.com/watch?v=X91jsJyZofw&list=PLv2d7VI9OotQ1F92Jp9Ce7ovHEsuRQB3Y&index=14)영상을 참고해서 `navbar` component 만들자.
 
+- 페이지 보기 -> [이동!](https://azurealstn.github.io/navbar-component/)
+
 ### 💥 핵심!
 
 - navbar의 핵심은 바로 CSS중에서도 `Flexbox`!
